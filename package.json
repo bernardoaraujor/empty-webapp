@@ -6,7 +6,7 @@
     "last 2 versions"
   ],
   "scripts": {
-    "dev": "concurrently \"yarn typecheck:watch\" \"webpack serve --config webpack.config.js\"",
+    "dev": "concurrently \"tsc -b --watch\" \"webpack serve --config webpack.config.js\"",
     "test": "exit 0; #No tests",
     "lint": "yarn eslint . --ext .ts,.tsx"
   },
